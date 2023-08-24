@@ -1,0 +1,88 @@
+.main-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 493px;
+}
+
+.main-header__logo {
+    flex-grow: 1;
+}
+
+.main-header__link {
+    border: 1px solid var(--basic-white);
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 100;
+    color: var(--basic-white);
+    padding: 13.5px 46px;
+    text-decoration: none;
+    margin-right: 27px;
+    font-style: italic;
+}
+
+.main-header__menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 44px;
+    height: 26.5px;
+    background: url('../../img/three-lines.svg') 50% / 100% no-repeat;
+}
+
+.main-header__menu * {
+    display: none;
+}
+
+.main-header__wrapper {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 1579px) {
+    .main-header {
+        margin-bottom: 70px;
+    }
+
+    .main-header__logo {
+        order: 1;
+        flex-grow: 0;
+    }
+
+    .main-header__menu {
+        flex-direction: row;
+        order: 2;
+        background-image: none;
+        width: auto;
+        height: auto;
+    }
+
+    .main-header__link {
+        order: 3;
+    }
+
+    .main-header__menu * {
+        display: block;
+        color: var(--basic-white);
+    }
+
+    .main-header__item {
+        font-family: sans-serif;
+        font-style: italic;
+        font-size: 16px;
+        font-weight: medium;
+    }
+
+    .main-header__item:not(:last-child) {
+        margin-right: 45px;
+    }
+
+    .main-header__wrapper {
+        width: 1018px;
+        justify-content: space-between;
+    }
+}

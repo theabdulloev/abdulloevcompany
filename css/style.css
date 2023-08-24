@@ -1,0 +1,20 @@
+/* global */
+
+@import url('./global/fonts.css');
+@import url('./global/global.css');
+@import url('./global/normalize.css');
+@import url('./global/variables.css');
+
+/* blocks */
+
+@import url('./blocks/page.css');
+@import url('./blocks/main-header.css');
+@import url('./blocks/page-main.css');
+@import url('./blocks/advantages.css');
+@import url('./blocks/work-section.css');
+@import url('./blocks/design-section.css');
+@import url('./blocks/pictures-section.css');
+@import url('./blocks/apps.css');
+@import url('./blocks/testimonials.css');
+@import url('./blocks/social-list.css');
+@import url('./blocks/main-footer.css');

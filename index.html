@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="page__body">
+    <div class="visually-hidden">
+        <svg>
+            <symbol id="alien" viewBox="0 0 29 30" fill="none">
+                <path
+                    d="M12.0495 13.395C13.5285 15.855 13.311 18.75 11.542 19.92C9.773 21.06 7.134 19.995 5.6405 17.535C4.1615 15.075 4.3935 12.15 6.1625 11.01C7.9315 9.87 10.5705 10.935 12.0495 13.395ZM14.5 23.625C17.4 23.625 18.125 22.5 18.125 22.5C18.125 22.5 17.4 25.5 14.5 25.5C11.6 25.5 10.875 22.545 10.875 22.5C10.875 22.5 11.6 23.625 14.5 23.625ZM22.8375 11.01C24.6065 12.15 24.8385 15.075 23.3595 17.535C21.866 19.995 19.227 21.06 17.458 19.92C15.689 18.75 15.4715 15.855 16.9505 13.395C18.4295 10.935 21.0685 9.87 22.8375 11.01ZM14.5 27C18.125 27 26.1 19.29 26.1 13.5C26.1 7.71 20.8945 3 14.5 3C8.1055 3 2.9 7.71 2.9 13.5C2.9 19.29 10.875 27 14.5 27ZM14.5 0C22.475 0 29 6.06 29 13.5C29 19.62 20.764 30 14.5 30C8.236 30 0 19.62 0 13.5C0 6.06 6.525 0 14.5 0Z"
+                    fill="#02E4C0" />
+            </symbol>
+
+            <symbol id="crockery" viewBox="0 0 26 24" fill="none">
+                <path
+                    d="M7.14636 13.6089L10.9197 9.83554L2.66636 1.59554C2.02636 0.955542 0.919691 1.12888 0.519691 1.95554C-0.426976 3.94221 -0.0803094 6.38221 1.55969 8.03554L7.14636 13.6089ZM16.1864 11.1955C18.2264 12.1422 21.093 11.4755 23.213 9.35554C25.7597 6.80887 26.253 3.15554 24.293 1.19554C22.3464 -0.751124 18.693 -0.271124 16.133 2.27554C14.013 4.39554 13.3464 7.26221 14.293 9.30221L2.21302 21.3822C1.96372 21.6315 1.82366 21.9696 1.82366 22.3222C1.82366 22.6748 1.96372 23.0129 2.21302 23.2622C2.46233 23.5115 2.80046 23.6516 3.15302 23.6516C3.50559 23.6516 3.84372 23.5115 4.09302 23.2622L12.3464 15.0355L20.5864 23.2755C20.7098 23.399 20.8563 23.4969 21.0176 23.5637C21.1789 23.6305 21.3518 23.6649 21.5264 23.6649C21.7009 23.6649 21.8738 23.6305 22.0351 23.5637C22.1964 23.4969 22.3429 23.399 22.4664 23.2755C22.5898 23.1521 22.6877 23.0055 22.7545 22.8443C22.8213 22.683 22.8557 22.5101 22.8557 22.3355C22.8557 22.161 22.8213 21.9881 22.7545 21.8268C22.6877 21.6655 22.5898 21.519 22.4664 21.3955L14.2264 13.1555L16.1864 11.1955Z"
+                    fill="#02E4C0" />
+            </symbol>
+
+            <symbol id="infinity" viewBox="0 0 41 19" fill="none">
+                <path
+                    d="M31.775 4.03437e-05C29.315 4.03437e-05 26.9917 0.988885 25.3346 2.70171L13.325 13.7203C12.2317 14.8504 10.7796 15.4684 9.225 15.4684C6.03042 15.4684 3.41667 12.8021 3.41667 9.50002C3.41667 6.19798 6.03042 3.53163 9.225 3.53163C10.7796 3.53163 12.2317 4.14966 13.3933 5.3504L15.3238 7.1162L17.9375 4.75003L15.7508 2.79C14.8953 1.90238 13.8782 1.19881 12.7581 0.719939C11.6379 0.241065 10.4371 -0.0036143 9.225 4.03437e-05C4.13417 4.03437e-05 0 4.27327 0 9.50002C0 14.7268 4.13417 19 9.225 19C11.685 19 14.0083 18.0112 15.6654 16.2983L27.675 5.27977C28.7683 4.14966 30.2204 3.53163 31.775 3.53163C34.9696 3.53163 37.5833 6.19798 37.5833 9.50002C37.5833 12.8021 34.9696 15.4684 31.775 15.4684C30.2375 15.4684 28.7683 14.8504 27.6067 13.6496L25.625 11.8662L23.0625 14.2324L25.2492 16.21C26.107 17.0932 27.125 17.7927 28.2448 18.2684C29.3646 18.7442 30.5643 18.9868 31.775 18.9823C36.8658 18.9823 41 14.7268 41 9.50002C41 4.20263 36.8658 4.03437e-05 31.775 4.03437e-05Z"
+                    fill="#02E4C0" />
+            </symbol>
+
+            <symbol id="facebook" viewBox="0 0 33 33" fill="none">
+                <path
+                    d="M31.2103 0.553223H1.75117C1.04271 0.553223 0.470337 1.12559 0.470337 1.83405V31.2932C0.470337 32.0016 1.04271 32.574 1.75117 32.574H31.2103C31.9187 32.574 32.4911 32.0016 32.4911 31.2932V1.83405C32.4911 1.12559 31.9187 0.553223 31.2103 0.553223ZM27.5119 9.89929H24.9542C22.9489 9.89929 22.5607 10.8519 22.5607 12.2528V15.3388H27.3478L26.7234 20.17H22.5607V32.574H17.5694V20.174H13.3947V15.3388H17.5694V11.7765C17.5694 7.64182 20.0951 5.38836 23.7855 5.38836C25.5546 5.38836 27.0716 5.52045 27.5159 5.58048V9.89929H27.5119Z"
+                    fill="currentColor" />
+            </symbol>
+
+            <symbol id="twitter" viewBox="0 0 35 28" fill="none">
+                <path
+                    d="M34.145 3.24877C32.9202 3.77711 31.5873 4.15736 30.2144 4.30546C31.6398 3.45865 32.7072 2.12084 33.2164 0.543014C31.8788 1.33869 30.4136 1.89663 28.8855 2.19208C28.2469 1.50935 27.4745 0.965448 26.6165 0.594277C25.7585 0.223107 24.8332 0.0326195 23.8983 0.0346846C20.1159 0.0346846 17.0739 3.10067 17.0739 6.86312C17.0739 7.39146 17.1379 7.9198 17.242 8.42813C11.5783 8.13194 6.52705 5.42618 3.16887 1.28349C2.55697 2.32863 2.23632 3.51865 2.24026 4.72973C2.24026 7.09927 3.44505 9.18862 5.28224 10.4174C4.19955 10.3748 3.14222 10.0772 2.19624 9.54886V9.63291C2.19624 12.9511 4.54176 15.7009 7.66779 16.3333C7.08084 16.4857 6.47704 16.5637 5.87062 16.5654C5.42633 16.5654 5.00606 16.5214 4.58178 16.4613C5.44634 19.1671 7.96398 21.1324 10.9619 21.1964C8.6164 23.0336 5.67849 24.1143 2.48843 24.1143C1.91605 24.1143 1.38771 24.0943 0.839355 24.0303C3.86532 25.9715 7.45565 27.0922 11.3222 27.0922C23.8743 27.0922 30.7428 16.6935 30.7428 7.66764C30.7428 7.37145 30.7428 7.07525 30.7227 6.77906C32.0516 5.80643 33.2164 4.60165 34.145 3.24877Z"
+                    fill="currentColor" />
+            </symbol>
+
+            <symbol id="in" viewBox="0 0 33 33" fill="none">
+                <path
+                    d="M31.1981 0.553223H1.73896C1.0305 0.553223 0.45813 1.12559 0.45813 1.83405V31.2932C0.45813 32.0016 1.0305 32.574 1.73896 32.574H31.1981C31.9065 32.574 32.4789 32.0016 32.4789 31.2932V1.83405C32.4789 1.12559 31.9065 0.553223 31.1981 0.553223ZM9.95629 27.8389H5.20521V12.557H9.95629V27.8389ZM7.58275 10.4677C7.03811 10.4677 6.50569 10.3061 6.05283 10.0036C5.59997 9.70097 5.24701 9.27089 5.03859 8.7677C4.83016 8.26451 4.77562 7.71081 4.88188 7.17663C4.98813 6.64245 5.25041 6.15177 5.63553 5.76665C6.02066 5.38152 6.51133 5.11925 7.04552 5.013C7.5797 4.90674 8.13339 4.96127 8.63658 5.1697C9.13977 5.37813 9.56985 5.73109 9.87244 6.18395C10.175 6.63681 10.3365 7.16922 10.3365 7.71387C10.3325 9.23486 9.09974 10.4677 7.58275 10.4677ZM27.7438 27.8389H22.9968V20.4061C22.9968 18.633 22.9647 16.3555 20.5272 16.3555C18.0576 16.3555 17.6773 18.2847 17.6773 20.278V27.8389H12.9342V12.557H17.4892V14.6464H17.5532C18.1856 13.4456 19.7346 12.1768 22.0481 12.1768C26.8593 12.1768 27.7438 15.3428 27.7438 19.4575V27.8389Z"
+                    fill="currentColor" />
+            </symbol>
+
+            <symbol id="location" viewBoxx="0 0 46 47" fill="none">
+                <path fill="currentColor"
+                    d="M23 27.335c4.228 0 7.667-3.438 7.667-7.666 0-4.229-3.439-7.667-7.667-7.667s-7.667 3.438-7.667 7.667c0 4.228 3.439 7.666 7.667 7.666Zm0-11.5a3.837 3.837 0 0 1 3.833 3.834A3.837 3.837 0 0 1 23 23.502a3.837 3.837 0 0 1-3.833-3.833A3.837 3.837 0 0 1 23 15.835Z" />
+                <path fill="currentColor"
+                    d="M21.888 42.312a1.913 1.913 0 0 0 2.224 0c.582-.412 14.277-10.3 14.221-22.644 0-8.454-6.878-15.333-15.333-15.333-8.454 0-15.333 6.879-15.333 15.324-.056 12.353 13.639 22.24 14.221 22.653ZM23 8.168c6.342 0 11.5 5.158 11.5 11.51.04 8.506-8.41 16.144-11.5 18.649-3.088-2.507-11.54-10.147-11.5-18.659 0-6.342 5.158-11.5 11.5-11.5Z" />
+            </symbol>
+
+            <symbol id="phone" viewBox="0 0 21 33" fill="none">
+                <path fill="currentColor"
+                    d="M16.333.46H4.667A4.37 4.37 0 0 0 .292 4.835v23.333a4.37 4.37 0 0 0 4.375 4.375h11.666a4.37 4.37 0 0 0 4.375-4.375V4.835A4.37 4.37 0 0 0 16.333.46Zm-2.916 29.167H7.583v-1.459h5.834v1.459Zm4.74-4.375H2.843V4.835h15.312v20.417Z" />
+            </symbol>
+        </svg>
+    </div>
+
+    <header class="main-header">
+        <div class="main-header__wrapper">
+            <a class="main-header__logo" href="">
+                <img src="./img/main-logo.png" width="186" height="58" alt="">
+            </a>
+
+            <a class="main-header__link" href="">Логин</a>
+
+            <ul class="main-header__menu">
+                <li class="main-header__item">Главная</li>
+                <li class="main-header__item">Продукт</li>
+                <li class="main-header__item">О нас</li>
+                <li class="main-header__item">Контакты</li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="page-main__section">
+            <div class="wrapper">
+                <h1 class="page-main__title">
+                    Работайте на скорости <br> мысли
+                </h1>
+
+                <div>
+                    <a class="try-for-free-link" href="">Попробуй бесплатно</a>
+                    <a class="learn-more-link" href="">Узнать больше</a>
+                </div>
+
+                <picture class="main-picture">
+                    <source media="(min-width: 1579px)" width="1552" srcset="./img/screens.png">
+                    <img src="./img/mobile-screen.png" width="539" height="435" alt="">
+                </picture>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="wrapper">
+
+                <picture>
+                    <source media="(min-width: 1579px)" width="752" srcset="./img/advantage.png">
+                    <img src="./img/advantages-mobile.png" width="376" height="476" alt="">
+                </picture>
+
+
+                <ul class="advantages__list">
+                    <li class="advantages__item">
+                        <svg width="25" height="23">
+                            <use xlink:href="#crockery"></use>
+                        </svg>
+                        <p> A single source of truth </p>
+                    </li>
+
+                    <li class="advantages__item">
+                        <svg width="29" height="30">
+                            <use xlink:href="#alien"></use>
+                        </svg>
+                        <p> Intuitive interface </p>
+                    </li>
+
+                    <li class="advantages__item">
+                        <svg width="41" height="19">
+                            <use xlink:href="#infinity"></use>
+                        </svg>
+                        <p> Or with rules </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <div>
+            <section class="work-section">
+                <h2 class="work-section__title">Работа</h2>
+                <a class="work-section__link" href="">Зарегистрироваться</a>
+                <img src="./img/macbook.png" width="297" height="174" alt="">
+            </section>
+
+            <section class="design-section">
+                <h2 class="design-section__title">Дизайн с <br> реальными данными</h2>
+                <a class="design-section__link try-for-free-link" href="">Попробуй бесплатно</a>
+                <img src="./img/boards_notifications.png" width="280" height="204" alt="">
+            </section>
+        </div>
+
+        <section class="pictures-section">
+            <div class="wrapper">
+                <h2 class="pictures-section__title">Галерея</h2>
+
+                <div class="pictures-section__pictures">
+                    <picture>
+                        <source media="(min-width: 1579px)" width="225" srcset="./img/device-desktop.png">
+                        <img src="./img/device.png" width="329" height="285">
+                    </picture>
+                    <img src="./img/tablet.png" width="329" height="285">
+                    <img src="./img/two-girls.png" width="329" height="285">
+                    <img src="./img/tv.png" width="329" height="285">
+                    <img src="./img/code.png" width="329" height="285">
+                    <img src="./img/notebook-2.png" width="329" height="285">
+                    <img src="./img/photo-device.png" width="329" height="285">
+                </div>
+
+                <a class="pictures-section__link" href="">Узнать больше</a>
+            </div>
+        </section>
+
+        <section class="apps">
+            <div class="wrapper">
+                <ul class="apps__list">
+                    <li class="apps__item">
+                        <img src="./img/appstore.svg" alt="">
+                    </li>
+
+                    <li class="apps__item">
+                        <img src="./img/three-3d-boxes.svg" alt="">
+                    </li>
+
+                    <li class="apps__item">
+                        <img src="./img/android.svg" alt="">
+                    </li>
+
+                    <li class="apps__item">
+                        <img src="./img/gallery.svg" alt="">
+                    </li>
+
+                    <li class="apps__item">
+                        <img src="./img/red-line.svg" alt="">
+                    </li>
+
+                    <li class="apps__item ibm">
+                        <img src="./img/ibm.svg" alt="">
+                    </li>
+                </ul>
+
+                <a class="apps__link" href="">all partners</a>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="wrapper">
+                <h2 class="testimonials__title">testimonials</h2>
+                <ul class="testimonials__list">
+                    <li class="testimonials__item">
+                        <div>
+                            <img src="./img/wade.png" width="50" height="50" alt="">
+
+                            <h3 class="avatar-name">
+                                Wade Steward <br>
+                                designer
+                            </h3>
+                        </div>
+
+                        <p>
+                            Slate helps you <br>
+                            see how many more days you need to work to reach your financial goal for the month and year.
+                            Slate helps you see how many more days you need to work to reach your financial goal for the
+                            month and year.your financial goal for the month and year.
+                        </p>
+                    </li>
+
+                    <li class="testimonials__item">
+                        <div>
+                            <img src="./img/philip.png" width="50" height="50" alt="">
+
+                            <h3 class="avatar-name">
+                                Philip Watson
+                                <br>
+                                designer
+                            </h3>
+                        </div>
+
+                        <p>
+                            Slate helps you <br>
+                            see how many more days you need to work to reach your financial goal for the month and year.
+                            Slate helps you see how many more days you need to work to reach your financial goal for the
+                            month and year.your financial goal for the month and year.
+                        </p>
+                    </li>
+
+                    <li class="testimonials__item">
+                        <div>
+                            <img src="./img/arthur.png" width="50" height="50" alt="">
+
+                            <h3 class="avatar-name">
+                                Arthur Wilson <br>
+                                designer
+                            </h3>
+                        </div>
+                        <p>
+                            Slate helps you <br>
+                            see how many more days you need to work to reach your financial goal for the month and year.
+                            Slate helps you see how many more days you need to work to reach your financial goal for the
+                            month and year.your financial goal for the month and year.
+                        </p>
+                    </li>
+
+                    <li class="testimonials__item">
+                        <div>
+                            <img src="./img/regina.png" width="50" height="50" alt="">
+
+                            <h3 class="avatar-name">
+                                Regina Black <br>
+                                designer
+                            </h3>
+                        </div>
+                        <p>
+                            Slate helps you <br>
+                            see how many more days you need to work to reach your financial goal for the month and year.
+                            Slate helps you see how many more days you need to work to reach your financial goal for the
+                            month and year.your financial goal for the month and year.
+                        </p>
+                    </li>
+                </ul>
+                <div class="light-fast">
+                    <div>
+                        <a class="testimonials__item-link try-for-free-link " href="">try for free</a>
+                    </div>
+                    <picture>
+                        <source media="(min-width: 1579px)" width="585" height="374" srcset="./img/light-desktop.png">
+                        <img src="./img/lightning-fast-proto.png" width="450" height="474" alt="">
+                    </picture>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <table class="main-footer__table">
+            <tr class="main-footer__tr">
+                <td class="main-footer__td">
+                    Fingertipe
+                </td>
+                <td class="main-footer__td">
+                    <a href="#"> home </a>
+                </td>
+                <td class="main-footer__td">
+                    <a href="#"> examples </a>
+                </td>
+                <td class="main-footer__td">
+                    <a href="#"> pricing </a>
+                </td>
+                <td class="main-footer__td">
+                    <a href="#"> updates </a>
+                </td>
+
+            </tr>
+
+            <tr class="main-footer__tr">
+                <td class="main-footer__td">
+                    Resources
+                </td>
+                <td class="main-footer__td">
+                    <a href="#"> home </a>
+                </td>
+                <td class="main-footer__td">
+                    <a href="#"> examples </a>
+                </td>
+                <td class="main-footer__td">
+                    <a href="#"> pricing </a>
+                </td>
+                <td class="main-footer__td">
+                    <a href="#"> updates </a>
+                </td>
+            </tr>
+
+            <tr class="main-footer__tr">
+                <td class="main-footer__td">
+                    about
+                </td>
+                <td class="main-footer__td">
+                    <a href="#"> home </a>
+                </td>
+                <td class="main-footer__td">
+                    <a href="#"> examples </a>
+                </td>
+                <td class="main-footer__td">
+                    <a href="#"> pricing </a>
+                </td>
+                <td class="main-footer__td">
+                    <a href="#"> updates </a>
+                </td>
+            </tr>
+        </table>
+
+        <div class="main-footer__right-side">
+            <span>
+                <svg width="46" height="47">
+                    <use xlink:href="#location"></use>
+                </svg>
+                7480 Mockingbird Hill undefined
+            </span>
+
+            <span style="margin-left: 10px;margin-bottom: 30px;">
+                <svg width="21" height="32" style="margin-right: 15px;">
+                    <use xlink:href="#phone"></use>
+                </svg>
+                (239) 555-0108
+            </span>
+
+            <ul class="social__list">
+                <li class="social__item">
+                    <svg width="33" height="27">
+                        <use xlink:href="#twitter"></use>
+                    </svg>
+                    <p class="visually-hidden">twitter</p>
+                </li>
+
+                <li class="social__item">
+                    <svg width="32" height="32">
+                        <use xlink:href="#facebook"></use>
+                    </svg>
+                    <p class="visually-hidden">facebook</p>
+                </li>
+
+                <li class="social__item">
+                    <svg width="33" height="32">
+                        <use xlink:href="#in"></use>
+                    </svg>
+                    <p class="visually-hidden">in</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

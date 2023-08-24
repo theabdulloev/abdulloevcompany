@@ -1,0 +1,15 @@
+.page {
+    background-color: var(--dark-bg);
+    font-family: sans-serif;
+}
+
+.wrapper {
+    width: 353px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1579px) {
+    .wrapper {
+       width: 985px;
+    }
+}
